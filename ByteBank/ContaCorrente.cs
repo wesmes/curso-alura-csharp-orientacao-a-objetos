@@ -10,7 +10,7 @@ namespace ByteBank
     {
 
         public int numeroAgencia;
-        public string contaCorrente;
+        public string conta;
         public string titular;
         public double saldo;
 
