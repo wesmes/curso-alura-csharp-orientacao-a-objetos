@@ -13,3 +13,14 @@ contaDoWeslley.Depositar(100);
 Console.WriteLine("Deposito efetuado no valor de: R$ 100");
 
 Console.WriteLine("Saldo da Conta do Weslley: R$ " + contaDoWeslley.saldo);
+
+if (contaDoWeslley.Sacar(300))
+{
+    Console.WriteLine("Saque efetuado no valor de: R$ 300");
+}
+else
+{
+    Console.WriteLine("Saldo insuficiente para sacar R$ 300");
+}
+
+Console.WriteLine("Saldo da Conta do Weslley: R$ " + contaDoWeslley.saldo);
