@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+int numeroAgencia;
+string conta;
+string titular;
+double saldo;
+
