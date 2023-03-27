@@ -30,9 +30,11 @@ namespace ByteBank.Contas
 
         }
 
-        private string conta;
+        // private string conta;
+        public string Conta { get; set; }
+
         private double saldo = 100;
-        private Cliente titular;
+        public Cliente Titular { get; set; };
 
         public void Depositar(double valor)
         {
