@@ -12,7 +12,7 @@ namespace ByteBank.Contas
 
         public int numeroAgencia;
         public string conta;
-        public double saldo = 100;
+        private double saldo = 100;
         public Cliente titular;
 
         public void Depositar(double valor)
@@ -51,6 +51,29 @@ namespace ByteBank.Contas
                 return true;
             }
 
+        }
+
+        public void SetSaldo(double valor)
+        {
+
+            if(valor < 0)
+            {
+
+                return;
+
+            } 
+            else
+            {
+
+                this.saldo = valor;
+
+            }
+
+        }
+
+        public double GetSaldo()
+        {
+            return this.saldo;
         }
 
     }
