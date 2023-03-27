@@ -39,3 +39,9 @@ Console.WriteLine("Transferência de R$50 realizada para conta da Maria.");
 Console.WriteLine("Saldo da Conta do Weslley: R$ " + contaDoWeslley.saldo);
 Console.WriteLine("Saldo da Conta do Maria: R$ " + contaDaMaria.saldo);
 
+ContaCorrente contaDoPedro = new ContaCorrente();
+contaDoPedro.titular = "Pedro Silva";
+Console.WriteLine(contaDoPedro.titular);
+Console.WriteLine(contaDoPedro.saldo);
+Console.WriteLine(contaDoPedro.numeroAgencia);
+Console.WriteLine(contaDoPedro.conta);
