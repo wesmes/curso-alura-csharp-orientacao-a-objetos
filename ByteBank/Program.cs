@@ -75,5 +75,13 @@ Console.WriteLine("Nº Conta: " + conta.conta);
 Console.WriteLine("Agência: " + conta.numeroAgencia);
 Console.WriteLine("Saldo: " + conta.saldo);
 
+ContaCorrente conta2 = new ContaCorrente();
+conta2.titular = new Cliente();
+conta2.titular.nome = "José Souza";
+conta2.titular.profissao = "Tester";
+conta2.titular.cpf = "987654321";
+conta2.conta = "9999-X";
+conta2.numeroAgencia = 18;
+conta2.saldo = 500;
 
-
+Console.WriteLine(conta2.titular.nome);
