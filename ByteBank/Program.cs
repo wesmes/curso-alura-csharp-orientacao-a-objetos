@@ -1,5 +1,5 @@
-﻿
-using ByteBank;
+﻿using ByteBank.Contas;
+using ByteBank.Titular;
 
 //ContaCorrente contaDoWeslley = new ContaCorrente();
 //contaDoWeslley.titular = "Weslley G. da Cruz";
