@@ -12,7 +12,7 @@ namespace ByteBank
         public int numeroAgencia;
         public string conta;
         public double saldo=100;
-        public string titular;
+        public Cliente? titular;
 
         public void Depositar(double valor)
         {

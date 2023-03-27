@@ -1,21 +1,21 @@
 ﻿
 using ByteBank;
 
-ContaCorrente contaDoWeslley = new ContaCorrente();
-contaDoWeslley.titular = "Weslley G. da Cruz";
-contaDoWeslley.numeroAgencia = 15;
-contaDoWeslley.conta = "1010-X";
-contaDoWeslley.saldo = 100;
+//ContaCorrente contaDoWeslley = new ContaCorrente();
+//contaDoWeslley.titular = "Weslley G. da Cruz";
+//contaDoWeslley.numeroAgencia = 15;
+//contaDoWeslley.conta = "1010-X";
+//contaDoWeslley.saldo = 100;
 
-ContaCorrente contaDoWeslley2 = new ContaCorrente();
-contaDoWeslley2.titular = "Weslley G. da Cruz";
-contaDoWeslley2.numeroAgencia = 15;
-contaDoWeslley2.conta = "1010-X";
-contaDoWeslley2.saldo = 100;
+//ContaCorrente contaDoWeslley2 = new ContaCorrente();
+//contaDoWeslley2.titular = "Weslley G. da Cruz";
+//contaDoWeslley2.numeroAgencia = 15;
+//contaDoWeslley2.conta = "1010-X";
+//contaDoWeslley2.saldo = 100;
 
-contaDoWeslley = contaDoWeslley2;
+//contaDoWeslley = contaDoWeslley2;
 
-Console.WriteLine(contaDoWeslley==contaDoWeslley2);
+//Console.WriteLine(contaDoWeslley==contaDoWeslley2);
 
 //Console.WriteLine("Saldo da Conta do Weslley: R$ "+contaDoWeslley.saldo);
 
@@ -55,5 +55,25 @@ Console.WriteLine(contaDoWeslley==contaDoWeslley2);
 //Console.WriteLine(contaDoPedro.saldo);
 //Console.WriteLine(contaDoPedro.numeroAgencia);
 //Console.WriteLine(contaDoPedro.conta);
+
+
+Cliente cliente = new Cliente();
+cliente.nome = "Weslley G. da Cruz";
+cliente.cpf = "123456789";
+cliente.profissao = "Analista";
+
+ContaCorrente conta = new ContaCorrente();
+conta.titular = cliente;
+conta.conta = "1010-X";
+conta.numeroAgencia = 15;
+conta.saldo = 100;
+
+Console.WriteLine("Titular: "+conta.titular.nome);
+Console.WriteLine("CPF: " + conta.titular.cpf);
+Console.WriteLine("Profissão: " + conta.titular.profissao);
+Console.WriteLine("Nº Conta: " + conta.conta);
+Console.WriteLine("Agência: " + conta.numeroAgencia);
+Console.WriteLine("Saldo: " + conta.saldo);
+
 
 
